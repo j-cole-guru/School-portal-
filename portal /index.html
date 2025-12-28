@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Record | National Student Portal</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="results-container">
+        <header class="portal-header">
+            <h2>National Student Records</h2>
+            <p id="displaySchool">School Name</p>
+        </header>
+
+        <div class="card">
+            <div class="student-info">
+                <p><strong>Student ID:</strong> <span id="displayID">---</span></p>
+            </div>
+            
+            <div class="results-table">
+                <div class="row header"><span>Subject</span><span>Grade</span></div>
+                <div class="row"><span>Mathematics</span><span class="grade">A1</span></div>
+                <div class="row"><span>English Language</span><span class="grade">B2</span></div>
+            </div>
+
+            <button class="btn-logout" onclick="location.href='index.html'">Logout</button>
+        </div>
+    </div>
+    <script src="results.js"></script>
+</body>
+</html>

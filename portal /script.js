@@ -48,3 +48,18 @@ loginForm.addEventListener('submit', function(e) {
         alert('Invalid School, Student ID, or PIN');
     }
 });
+
+document.getElementById('loginBtn').addEventListener('click', function() {
+    const school = document.querySelector('input[placeholder="Type your school name"]').value;
+    const studentID = document.querySelector('input[placeholder="Enter your Student ID"]').value;
+
+    if (school && studentID) {
+        // This "remembers" the data for the next page
+        localStorage.setItem('userSchool', school);
+        localStorage.setItem('userID', studentID);
+        window.location.href = 'results.html';
+    } else {
+        alert("Please enter your details.");
+    }
+});
+
