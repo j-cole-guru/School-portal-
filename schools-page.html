@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schools</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,13 +13,24 @@
     </header>
 
     <main class="dashboard-main">
-      <ul id="schoolsList"></ul>
-
       <button class="dashboard-btn" onclick="goBack()">
         Back to Dashboard
       </button>
+
+      <section>
+        <div id="schools_container"></div>
+      </section>
+      <br>
+      <section>
+        <h2>Create a new school</h2>
+        <form id="schoolForm">
+          <label for="schoolname">school name</label>
+          <input type="text" name="schoolname" id="schoolname">
+          <input type="submit" value="create" id="submitButn">
+        </form>
+      </section>
     </main>
 
-    <script src="login.js"></script>
+    <script src="services/school.js"></script>
   </body>
 </html>
