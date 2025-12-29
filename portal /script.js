@@ -49,17 +49,76 @@ loginForm.addEventListener('submit', function(e) {
     }
 });
 
-document.getElementById('loginBtn').addEventListener('click', function() {
-    const school = document.querySelector('input[placeholder="Type your school name"]').value;
-    const studentID = document.querySelector('input[placeholder="Enter your Student ID"]').value;
+// ===== Dashboard JS =====
+window.onload = function() {
+  if(document.getElementById("sampleBtn")) {
+    alert("Welcome to the Portal Dashboard!");
+  }
+}
 
-    if (school && studentID) {
-        // This "remembers" the data for the next page
-        localStorage.setItem('userSchool', school);
-        localStorage.setItem('userID', studentID);
-        window.location.href = 'results.html';
-    } else {
-        alert("Please enter your details.");
-    }
+const btn = document.getElementById("sampleBtn");
+if(btn){
+  btn.addEventListener("click", () => {
+    alert("You clicked the button!");
+  });
+}
+
+// ===== Dashboard button logic =====
+document.getElementById("schoolsBtn")?.addEventListener("click", () => {
+  alert("Load Schools Page (future)");
 });
 
+document.getElementById("studentsBtn")?.addEventListener("click", () => {
+  alert("Load Students Page (future)");
+});
+
+document.getElementById("resultsBtn")?.addEventListener("click", () => {
+  alert("Load Results Page (future)");
+});
+
+document.getElementById("logoutBtn")?.addEventListener("click", () => {
+  window.location.href = "index.html";
+});
+// Schools Section logic
+const schoolsBtn = document.getElementById("schoolsBtn");
+const schoolsSection = document.getElementById("schoolsSection");
+const schoolsList = document.getElementById("schoolsList");
+
+const schools = ["MBHS", "IMATT College", "Harvard", "Oxford"];
+
+schoolsBtn.addEventListener("click", () => {
+  // Show the section
+  schoolsSection.style.display = "block";
+
+  // Clear previous list
+  schoolsList.innerHTML = "";
+
+  // Add schools dynamically
+  schools.forEach(school => {
+    const li = document.createElement("li");
+    li.textContent = school;
+    schoolsList.appendChild(li);
+  });
+});
+
+// ===== Schools Page Logic =====
+const schoolsList = document.getElementById("schoolsList");
+
+if (schoolsList) {
+  const schools = [
+    "Methodist Boys High School (MBHS)",
+    "IMATT College",
+    "Albert Academy",
+    "Prince of Wales"
+  ];
+
+  schools.forEach(school => {
+    const li = document.createElement("li");
+    li.textContent = school;
+    schoolsList.appendChild(li);
+  });
+}
+
+function goBack() {
+  window.location.href = "schools.html";
+}

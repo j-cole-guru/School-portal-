@@ -109,3 +109,158 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+/* ===== Dashboard styles ===== */
+body.dashboard {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+h1.dashboard {
+  color: #333;
+}
+
+button.dashboard {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* ===== Dashboard Page ===== */
+body.dashboard {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header.dashboard-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main.dashboard-main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-btn {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background-color: #45a049;
+}
+
+#schoolsSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+}
+
+#schoolsList li {
+  list-style: none;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* ===== HEADER (Same as login page) ===== */
+.dashboard-header {
+  background-color: #294e68;
+  color: #fff;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.dashboard-main {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== BUTTONS ===== */
+.dashboard-btn {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #294e68;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #1f3b50;
+}
+
+/* ===== SCHOOLS LIST ===== */
+#schoolsList {
+  margin-top: 15px;
+}
+
+#schoolsList li {
+  list-style: none;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #f4f7fb;
+  border-left: 5px solid #294e68;
+  font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
