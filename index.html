@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Student Portal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>National Student Portal</h1>
+      <p>Access your school results securely</p>
+    </header>
 
-<header>
-    <h1>National Student Portal</h1>
-    <p>Access your school results securely</p>
-</header>
-
-<main>
-    <!-- Login Section -->
-    <section class="login-section" id="loginSection">
+    <main>
+      <!-- Login Section -->
+      <section class="login-section" id="loginSection">
         <h2>Student Login</h2>
         <form id="loginForm">
-            <label for="school">Enter School Name:</label>
-            <input type="text" id="school" placeholder="Type your school name" required>
+          <label for="school">Enter School Name:</label>
+          <input
+            type="text"
+            id="school"
+            placeholder="Type your school name"
+            required
+          />
 
-            <label for="studentID">Student ID:</label>
-            <input type="text" id="studentID" placeholder="Enter your Student ID" required>
+          <label for="studentID">Student ID:</label>
+          <input
+            type="text"
+            id="studentID"
+            placeholder="Enter your Student ID"
+            required
+          />
 
-            <label for="pin">PIN:</label>
-            <input type="password" id="pin" placeholder="Enter your PIN" required>
+          <label for="pin">PIN:</label>
+          <input
+            type="password"
+            id="pin"
+            placeholder="Enter your PIN"
+            required
+          />
 
-            <a href="schools.html">
-  <input type="button" value="Login">
-</a>
+          <a href="schools.html">
+            <input type="button" value="Login" />
+          </a>
         </form>
-    </section>
+      </section>
 
-    <!-- Results Section -->
-    <section class="results-section" id="resultsSection" style="display:none;">
+      <!-- Results Section -->
+      <section
+        class="results-section"
+        id="resultsSection"
+        style="display: none"
+      >
         <h2>Student Results</h2>
         <p id="welcomeMessage"></p>
         <div id="resultsCards"></div>
         <button id="backBtn">Back to Login</button>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer>
-    <p>&copy; 2025 National Student Portal</p>
-</footer>
+    <footer>
+      <p>&copy; 2025 National Student Portal</p>
+    </footer>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
