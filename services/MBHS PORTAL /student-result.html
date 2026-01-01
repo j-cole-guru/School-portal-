@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Result | MBHS Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+  <aside class="sidebar">
+    <h2>MBHS Portal</h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="classes.html">Classes</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Student Result – John Kamara</h1>
+
+    <table class="table" id="studentResults">
+      <tr><th>Subject</th><th>Score</th><th>Grade</th></tr>
+    </table>
+
+    <h2>Class Performance</h2>
+    <p>Class Average: <span id="classAvg">0</span>%</p>
+    <canvas id="chart"></canvas>
+
+    <footer class="dash-footer">
+      © 2026 MBHS Portal — Developed by <strong>Alie Amadu Sesay & Yakub swarray</strong>
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
